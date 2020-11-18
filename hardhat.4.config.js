@@ -1,7 +1,6 @@
-require("@nomiclabs/hardhat-waffle");
-require('dotenv').config()
+const baseConfig = require('./hardhat.config');
 
-module.exports = {
+const config4 = {
   solidity: {
     version: "0.4.11",
     settings: {
@@ -14,12 +13,9 @@ module.exports = {
   paths: {
     sources: "./contracts/4",
   },
-  defaultNetwork: "simnet",
-  networks: {
-    simnet: {
-      url: "http://35.234.110.95:8545",
-      accounts: [process.env.DEPLOYER_PRIVATE_KEY]
-    }
-  },
 };
 
+module.exports = {
+  ...baseConfig,
+  ...config4,
+};
