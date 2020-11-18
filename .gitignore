@@ -1,4 +1,5 @@
 node_modules
+DEPLOYER_PRIVATE_KEY
 
 #Hardhat files
 cache
