@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy:usdt": "npx hardhat --config hardhat.4.config.js run scripts/tether.js",
+    "deploy:dai": "npx hardhat --config hardhat.5.config.js run scripts/dai.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
